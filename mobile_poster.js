@@ -8,10 +8,13 @@ function setup() {
  createCanvas(210*3,297*3);
 colorMode(HSB);
 }
-
+let x = 0;
 
 function draw() {
-background(map(accelerationY,-1,1,0,300),255,255);
+background(x,255,255);
 image(poster,0,0,210*3,297*3);
 
+}
+function deviceShaken{
+  x = random(300);
 }
