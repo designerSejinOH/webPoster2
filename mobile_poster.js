@@ -1,5 +1,4 @@
 let poster;
-
 function preload(){
   poster = loadImage('DirtyHit_poster.png');
 }
@@ -15,6 +14,6 @@ background(x,255,255);
 image(poster,0,0,210*3,297*3);
 }
 
-function deviceShaken(){
+function mousePressed(){
   x = random(300);
 }
