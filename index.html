@@ -17,11 +17,12 @@ function setup() {
 colorMode(HSB);
 }
 let x = 0;
-
+let a =0;
 function draw() {
 background(x,255,255);
 image(poster,0,0,width,height);
-	x = map(rotationY,-90,90,0,300);
+	x = map(sin(a),-1,1,0,300);
+	a+=.05;
 }
 
 //function deviceShaken(){
